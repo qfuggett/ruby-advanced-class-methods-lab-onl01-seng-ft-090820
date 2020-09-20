@@ -50,7 +50,7 @@ class Song
         split_song_artist = [ ]
         split_up = filename.split(" - ")
         split_song_artist << split_up
-        new_song = split_song_artist[0].create_by_name
+        new_song = split_song_artist[0]
       #end
         new_song
     end
