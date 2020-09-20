@@ -41,7 +41,7 @@ class Song
   end
   
   def self.alphabetical
-    binding.pry
+    #binding.pry
   end
   
 end
