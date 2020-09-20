@@ -41,7 +41,6 @@ class Song
   end
   
   def self.alphabetical
-    binding.pry
     @@all.sort_by { |song| song.name}   #remember .name is an attr_accessor
   end
   
