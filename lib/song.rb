@@ -49,11 +49,6 @@ class Song
     no_fileformat = filename.chomp(".mp3")
     split_filename = no_fileformat.split(" - ")
     
-    split_song_artist = [ ]
-        split_up = filename.split(" - ")
-        split_song_artist << split_up
-        new_song = split_song_artist[0]
-        new_song
     
       
   end
