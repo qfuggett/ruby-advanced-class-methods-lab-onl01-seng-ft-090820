@@ -42,7 +42,7 @@ class Song
   
   def self.alphabetical
     binding.pry
-    @@all.sort_by { |song| song.name}
+    @@all.sort_by { |song| song.name}   #remember .name is an attr_accessor
   end
   
 end
