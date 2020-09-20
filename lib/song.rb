@@ -16,7 +16,7 @@ class Song
     song
   end
   
-  def self.new_by_name(name)
+  def Song.new_by_name(name)
     song = self.new       #instantiates a song
     song.name = name      #name property is applied
     song
