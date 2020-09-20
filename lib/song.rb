@@ -45,7 +45,9 @@ class Song
   end
   
   def self.new_from_filename(name)
-    binding.pry
+    if name.include?(".mp3")
+      name.each do |song|
+        song.split
   end
   
 end
