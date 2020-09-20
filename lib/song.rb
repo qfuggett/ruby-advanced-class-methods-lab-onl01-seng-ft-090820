@@ -40,7 +40,7 @@ class Song
     self.find_by_name(name) || self.create_by_name(name)    #if find_by_name returns true it stays left, else right
   end
   
-  def self.alphabetical(name)
+  def self.alphabetical
     binding.pry
   end
   
