@@ -46,12 +46,12 @@ class Song
   
   def self.new_from_filename(filename)
     if filename.include?(".mp3")
-      filename.each do |song|
+      #filename.each do |song|
         split_song_artist = [ ]
         split_up = song.split(" - ")
         split_song_artist << split_up
         new_song = split_song_artist[0].create_by_name
-      end
+      #end
       new_song
     end
       
