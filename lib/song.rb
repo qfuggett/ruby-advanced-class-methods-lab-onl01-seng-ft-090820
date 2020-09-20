@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -35,11 +37,11 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-    if self.find_by_name(name)
-      self.find_by_name(name)
-    else self.create_by_name(name)
-    end
-    
+    self.find_by_name(name) || self.create_by_name(name)    #if find_by_name returns true it stays left, else right
+  end
+  
+  def self.alphabetical(name)
+    binding.pry
   end
   
 end
