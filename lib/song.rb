@@ -50,11 +50,11 @@ class Song
         split_song_artist = [ ]
         split_up = song.split(" - ")
         split_song_artist << split_up
-        new_song = ""
         new_song = split_song_artist[0].create_by_name
       end
-    end
       new_song
+    end
+      
   end
   
 end
