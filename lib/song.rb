@@ -45,6 +45,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
+    binding.pry
     if filename.include?(".mp3")
         split_song_artist = [ ]
         split_up = filename.split(" - ")
