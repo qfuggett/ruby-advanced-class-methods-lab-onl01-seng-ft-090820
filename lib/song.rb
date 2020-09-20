@@ -53,10 +53,10 @@ class Song
     song
   end
   
-  def self.create_from_filename
-    no_fileformat = filename.chomp(".mp3")            #"artist - song name"
-    split_filename = no_fileformat.split(" - ")       #["artist", "song"]
-    song = self.new                                   #instantiates a new song
+  def self.create_from_filename(filename)
+    no_fileformat = filename.chomp(".mp3")            
+    split_filename = no_fileformat.split(" - ")       
+    song = self.new                                   
     song.name = split_filename[1]
     song.artist_name = split_filename[0]
     song.save
