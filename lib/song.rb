@@ -52,7 +52,7 @@ class Song
         split_song_artist << split_up
         new_song = split_song_artist[0]
         new_song
-    end
+    
       
   end
   
