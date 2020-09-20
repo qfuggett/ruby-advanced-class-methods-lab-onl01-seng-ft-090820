@@ -44,4 +44,8 @@ class Song
     @@all.sort_by { |song| song.name}   #remember .name is an attr_accessor
   end
   
+  def self.new_from_filename
+    
+  end
+  
 end
